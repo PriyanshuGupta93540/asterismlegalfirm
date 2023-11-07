@@ -1778,3 +1778,12 @@ a:focus {
 .disc{
     width: 2500px;
 }
+
+.discbutton{
+    background-color: #121518;
+    color: white;
+}
+.discbutton1{
+    background-color: #666666;;
+    color: white;
+}
