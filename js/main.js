@@ -110,5 +110,26 @@
 
 
   
-  
+//   DISCLAIMER 
 
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if the disclaimer has been accepted before
+    const disclaimerAccepted = localStorage.getItem('disclaimerAccepted');
+    const disclaimerOverlay = document.querySelector('.disclaimer-overlay');
+  
+    // If the disclaimer has not been accepted, show the modal
+    if (!disclaimerAccepted) {
+      disclaimerOverlay.style.display = 'flex';
+    }
+  
+    // Handle click on "I Accept" button
+    document.getElementById('acceptButton').addEventListener('click', function() {
+      // Set a flag in local storage to indicate that the disclaimer has been accepted
+      localStorage.setItem('disclaimerAccepted', 'true');
+      
+      // Hide the modal
+      disclaimerOverlay.style.display = 'none';
+    });
+  });
+  

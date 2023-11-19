@@ -86,6 +86,11 @@ a:focus {
     overflow: hidden;
 }
 
+.logopri{
+    width: 120px;
+    height: 250px;
+}
+
 .top-bar .logo h1 {
     margin: 0;
     color: #aa9166;
@@ -1648,6 +1653,12 @@ a:focus {
     background: #121518;
     color: #ffffff;
 }
+.footer-content{
+    width: 310px;
+}
+.footer-services{
+    width: 500px;
+}
 
 .footer .footer-about,
 .footer .footer-link,
@@ -1786,4 +1797,36 @@ a:focus {
 .discbutton1{
     background-color: #666666;;
     color: white;
+}
+
+
+/* CALL TO ACTION */
+.calltoaction{
+    position: relative;
+    font-weight: bold;
+}
+.calltoactiondiv{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 100;
+}
+.calltoactionget{
+    position: absolute;
+    left: 900px;
+   
+}
+.calltoactionget>a{
+    width: 200px;
+    height: 60px;
+    padding-top: 18px;
+    text-align: center;
+    font: bold;
+    font-weight: 200px;
+    color: white;
+    background-color: #b28538;
+   font-size: larger;
+}
+.calltoactionget>a{
+    /* color: white; */
 }
