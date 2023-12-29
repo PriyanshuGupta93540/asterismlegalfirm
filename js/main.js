@@ -133,3 +133,51 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+
+
+////////////////////////////////////// API INTEGRATION ///////////////////////////////
+
+// SUBMIT FORM
+
+// script.js
+
+// script.js
+
+console.log('Script loaded!');
+
+function submitForm(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get form data
+    const formData = new FormData(event.target);
+
+    // Convert formData to JSON
+    const jsonData = {};
+    formData.forEach((value, key) => {
+        jsonData[key] = value;
+    });
+
+    // Make a POST request to the API endpoint
+    fetch('http://localhost:8080/api/submit-form', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(jsonData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        // You can add code here to handle success, such as showing a success message to the user.
+
+        alert('We got your message! We will get back to you soon');
+       
+
+        // Reset the form
+        event.target.reset();
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        // You can add code here to handle errors, such as showing an error message to the user.
+    });
+}
