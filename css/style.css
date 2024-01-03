@@ -1805,3 +1805,17 @@ a:focus {
     font-size: 1px; 
     /* font-weight: 100; */
 }
+
+@media (max-width: 950px) {
+   .logomobile{
+    width: 80px;
+   }
+   .logoflex{
+    display: flex;
+    flex-direction: row-reverse;
+   }
+   .logoicon{
+    width:40px;
+    height: 40px;
+   }
+}
