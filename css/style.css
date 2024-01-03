@@ -80,7 +80,11 @@ a:focus {
     /* width: 50px; */
     background: #000000;
 }
-
+.logo>a>img{
+    width: 160px;
+    height: 70px;
+    padding-left: 50px;
+}
 .top-bar .logo {
     padding: 15px 0;
     text-align: left;
@@ -273,6 +277,20 @@ a:focus {
     .nav-bar .btn {
         display: none;
     }
+}
+
+
+
+
+.navbar-nav{
+    padding-left: 190px;
+    justify-content: space-around;
+    display: flex;
+    gap: 10px;    
+}
+.nav-item{
+    /* padding-left: 10px; */
+   
 }
 
 
@@ -1778,4 +1796,12 @@ a:focus {
 /* CALL TO ACTION */
 .btncall{
     background-color: #aa9166;;
+}
+
+
+
+
+.service-texts{
+    font-size: 1px; 
+    /* font-weight: 100; */
 }
