@@ -25,6 +25,55 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+
+        <style>
+            /* Styles for the overlay */
+            #overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                justify-content: center;
+                align-items: center;
+                z-index: 5;
+                
+            }
+            
+            .modal-para{
+                text-align: start;
+                margin-top: -20px;
+            }
+
+            .modal-head>h3{
+                text-align: start;
+                margin-left: 16px;
+                margin-top: 15px;
+            }
+    
+            /* Styles for the modal */
+            #modal {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                width: 40%;
+                overflow: auto;
+                height: 600px;
+            }
+    
+            /* Styles for the buttons */
+            #acceptBtn, #declineBtn {
+                padding: 10px 20px;
+                margin: 0 10px;
+                cursor: pointer;
+            }
+        </style>
+
+
     </head>
 
     <body>
@@ -916,13 +965,13 @@ New Delhi – 110049</p> -->
 
 
         <!-- <-- Disclaimer Modal -->
-    <div id="disclaimerModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="disclaimerModalLabel">Disclaimer</h5>
+        <div id="overlay">
+            <div id="modal">
+                <div class="modal-head">
+                    <h3>Disclaimer</h3>
+                    <hr>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body modal-para">
                     <p>As the rules of the Bar Council of India says, we are not permitted to solicit work and advertise. By clicking "I agree", the user already accepts and acknowledges the following:</p>
                    <ul>
                     <li>There has been no advertisement, personal communication, solicitation, invitation, or inducement of any kind from us or any of our members to solicit work through this website.</li>
@@ -931,61 +980,33 @@ New Delhi – 110049</p> -->
                    </ul>
                    <p>The information provided under the website is wholly available at your request for informational purposes only, so it should not be interpreted as soliciting or advertisement. It is very much clear that Asterisms Legal (AL) or any of its member is not liable for any consequence of any action taken by the user relying on material or information provided under the website. If the user of the website has any legal issues, they must seek independent legal advice accordingly.</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn  discbutton" id="acceptButton">Accept</button>
-                    <button type="button" class="btn  discbutton1" id="declineButton">Decline</button>
-                </div>
+
+                <button id="acceptBtn">Accept</button>
+                <button id="declineBtn">Decline</button>
             </div>
         </div>
-    </div>
-
-
-    <script>
-        // Function to set a cookie
-        function setCookie(name, value, days) {
-            const expires = new Date();
-            expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-            document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
-        }
-    
-        // Function to get a cookie by name
-        function getCookie(name) {
-            const cookies = document.cookie.split(';');
-            for (let i = 0; i < cookies.length; i++) {
-                const cookie = cookies[i].trim();
-                if (cookie.startsWith(name + '=')) {
-                    return cookie.substring(name.length + 1);
-                }
-            }
-            return null;
-        }
-    
-        // Check if the user has already accepted or declined the disclaimer
-        const disclaimerAccepted = getCookie('disclaimerAccepted');
-    
-        if (disclaimerAccepted === null) {
-            // Show the disclaimer modal if the user hasn't made a choice
-            $('#disclaimerModal').modal('show');
-        }
-    
-        // Handle the "Accept" button click
-        $('#acceptButton').click(function() {
-            // Set a cookie to remember the user's choice
-            setCookie('disclaimerAccepted', 'true', 30); // Cookie expires in 30 days
-    
-            // Redirect to the home page (replace with your actual home page URL)
-            window.location.href = 'index.html';
-        });
-    
-        // Handle the "Decline" button click
-        $('#declineButton').click(function() {
-            // Set a cookie to remember the user's choice
-            setCookie('disclaimerAccepted', 'false', 30); // Cookie expires in 30 days
-    
-            // Redirect to Google (or any other URL you prefer)
-            window.location.href = 'https://www.google.com';
-        });
-    </script>         
+        
+        <script>
+            // Get the modal and buttons
+            var overlay = document.getElementById('overlay');
+            var acceptBtn = document.getElementById('acceptBtn');
+            var declineBtn = document.getElementById('declineBtn');
+        
+            // Show the modal
+            overlay.style.display = 'flex';
+        
+            // Event listener for the accept button
+            acceptBtn.addEventListener('click', function() {
+                // Close the modal
+                overlay.style.display = 'none';
+            });
+        
+            // Event listener for the decline button
+            declineBtn.addEventListener('click', function() {
+                // Redirect to google.com
+                window.location.href = 'https://www.google.com';
+            });
+        </script>       
 
 
 
