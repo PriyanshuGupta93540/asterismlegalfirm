@@ -1819,3 +1819,9 @@ a:focus {
     height: 40px;
    }
 }
+
+@media (max-width:650px ) {
+    #modal{
+        width: 90%;
+    }
+}
