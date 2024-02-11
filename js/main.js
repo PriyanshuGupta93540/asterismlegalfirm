@@ -184,11 +184,11 @@ function submitForm(event) {
 
 
 
-<script>
+{/* <script>
 if (location.href.endsWith('.html')) {
     location.href = location.href.replace('.html', '')
 }
-</script>
+</script> */}
 
 
 

@@ -352,6 +352,38 @@ New Delhi – 110049</p> -->
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
 
+
+        <!-- <script>
+            function loadContent(url) {
+              fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                  document.getElementById('content').innerHTML = html;
+                });
+            }
+        
+            function handleNavigation(event) {
+              event.preventDefault();
+              const url = event.target.getAttribute('href');
+              // Remove leading slash and .html extension
+              const path = url.substring(1).replace('.html', '');
+              history.pushState({}, '', path);
+              loadContent(url);
+            }
+        
+            document.querySelectorAll('nav a').forEach(link => {
+              link.addEventListener('click', handleNavigation);
+            });
+        
+            window.addEventListener('popstate', () => {
+              // When the user navigates back/forward, load content based on the URL
+              loadContent(window.location.pathname + '.html');
+            });
+        
+            // Load initial content based on current URL
+            loadContent(window.location.pathname + '.html');
+          </script> -->
+
      
 
 
