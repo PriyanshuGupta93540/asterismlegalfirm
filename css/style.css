@@ -821,7 +821,7 @@ a:focus {
 }
 
 .team .team-item {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .team .team-img {
@@ -834,10 +834,17 @@ a:focus {
 
 .team .team-text {
     position: relative;
-    padding: 50px 15px 30px 15px;
+    /* padding: 50px 15px 30px 45px; */
     text-align: center;
     background: #121518;
 }
+.team-text{
+    padding-top: 20px;
+    height: 120px;
+    justify-content: center;
+  align-items: center;
+}
+
 
 .team .team-text h2 {
     font-size: 22px;
@@ -1817,6 +1824,16 @@ a:focus {
    .logoicon{
     width:40px;
     height: 40px;
+   }
+   .logo{
+    display: none;
+   }
+   .navmenu{
+      /* margin-left: -50px; */
+      /* display: flex; */
+      /* align-items: center; */
+      /* justify-content: center; */
+      /* width: auto; */
    }
 }
 

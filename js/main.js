@@ -181,3 +181,19 @@ function submitForm(event) {
         // You can add code here to handle errors, such as showing an error message to the user.
     });
 }
+
+
+
+<script>
+if (location.href.endsWith('.html')) {
+    location.href = location.href.replace('.html', '')
+}
+</script>
+
+
+
+
+
+
+
+
