@@ -1673,6 +1673,13 @@ a:focus {
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
+
+.footer-content{
+    width: 80%;
+}
+
+
+
 .footer {
     position: relative;
     margin-top: 45px;
@@ -1708,8 +1715,8 @@ a:focus {
 
 .footer .footer-link a::before {
     position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    /* content: "\f105"; */
+    /* font-family: "Font Awesome 5 Free"; */
     font-weight: 900;
     margin-right: 10px;
 }
