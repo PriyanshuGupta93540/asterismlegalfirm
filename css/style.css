@@ -191,6 +191,10 @@ a:focus {
   transition: 0.3s;
 }
 
+.nav-bar {
+  background-color: antiquewhite;
+}
+
 .nav-bar.nav-sticky {
   position: fixed;
   top: 0;
