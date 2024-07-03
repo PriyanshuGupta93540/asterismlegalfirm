@@ -1851,3 +1851,10 @@ a:focus {
     width: 90%;
   }
 }
+
+/* Contact map */
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-inline: 30px;
+}
