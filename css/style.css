@@ -1804,6 +1804,13 @@ a:focus {
 .footer .copyright p a:hover {
   color: #ffffff;
 }
+.logofooter {
+  width: 220px;
+  height: 100px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 768px) {
   .footer .copyright p,
