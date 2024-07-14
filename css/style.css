@@ -1829,7 +1829,7 @@ a:focus {
   font-size: 50px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .logomobile {
     width: 80px;
   }
