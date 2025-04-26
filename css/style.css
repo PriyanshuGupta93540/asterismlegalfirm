@@ -52,7 +52,7 @@ a:focus {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #aa9166;
+  background: #ffffff;
   color: #121518;
   width: 44px;
   height: 44px;
@@ -67,11 +67,64 @@ a:focus {
 
 .back-to-top:hover {
   color: #aa9166;
-  background: #121518;
+  background: #ffffff;
+  /* display: none; */
 }
 
 .back-to-top i {
   padding-top: 10px;
+  /* display: none; */
+}
+
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  font-size: 45px;
+  /* color: #25d366; */
+  color: #00ff5e;
+}
+
+/* 
+News and Feed 
+*/
+/* News Ticker Styles */
+.news-ticker {
+  width: 100%;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding:5.5px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.ticker-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.ticker-content {
+  display: inline-block;
+  animation: scrollTicker 15s linear infinite;
+}
+
+.ticker-content span {
+  margin-right: 50px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Animation for scrolling */
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /**********************************/
@@ -252,6 +305,7 @@ a:focus {
   .nav-bar,
   .nav-bar .navbar {
     background: #33383e !important;
+    /* background: #0d0d0e !important; */
   }
 
   .nav-bar .navbar-brand {
@@ -269,7 +323,7 @@ a:focus {
   .nav-bar,
   .nav-bar .navbar {
     padding: 3px 0;
-    background: #121518 !important;
+    background: #33383e !important;
   }
 
   .nav-bar a.nav-link {
@@ -670,7 +724,8 @@ a:focus {
   position: relative;
   width: 100%;
   text-align: center;
-  background: #121518;
+  background: #121518e7;
+  /* background: #2e3135; */
   margin-bottom: 30px;
 }
 
@@ -690,7 +745,8 @@ a:focus {
   text-align: center;
   font-size: 60px;
   color: #aa9166;
-  background: #121518;
+  /* background: #121518; */
+  background: #1215184f;
   transition: 0.5s;
 }
 
@@ -700,17 +756,24 @@ a:focus {
 
 .service .service-item h3 {
   margin: 0;
-  padding: 25px 15px 15px 15px;
+  padding: 29px 15px 15px 15px;
   font-size: 30px;
   font-weight: 600;
   color: #aa9166;
+}
+.bank {
+  padding-top: 15px !important;
+  padding-bottom: 32px !important;
+}
+.bank-law {
+  padding-top: 42px !important;
 }
 
 .service .service-item p {
   margin: 0;
   color: #999999;
   padding: 0 25px 25px 25px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .service .service-item a.btn {
@@ -724,7 +787,9 @@ a:focus {
   color: #aa9166;
   border: 2px solid #aa9166;
   border-radius: 0;
-  background: #121518;
+  /* background: #121518; */
+  background: #33383e;
+
   transition: 0.3s;
 }
 
@@ -752,7 +817,7 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #121518;
+  background: #121518e7;
 }
 
 .feature .feature-icon i {
@@ -836,7 +901,7 @@ a:focus {
   position: relative;
   /* padding: 50px 15px 30px 45px; */
   text-align: center;
-  background: #121518;
+  background: #121518e7;
 }
 .team-text {
   padding-top: 20px;
@@ -905,7 +970,7 @@ a:focus {
   position: relative;
   height: 100%;
   padding: 10px;
-  background: #121518;
+  background: #121518e7;
 }
 
 .faqs .faqs-img img {
@@ -944,7 +1009,7 @@ a:focus {
 .faqs .card-header a {
   display: block;
   width: 100%;
-  color: #121518;
+  color: #121518e7;
   font-size: 18px;
   line-height: 40px;
 }
@@ -955,7 +1020,7 @@ a:focus {
   height: 40px;
   margin-right: 10px;
   text-align: center;
-  background: #121518;
+  background: #121518e7;
   color: #aa9166;
   font-weight: 700;
 }
@@ -964,7 +1029,7 @@ a:focus {
   font-family: "font Awesome 5 Free";
   content: "\f067";
   float: right;
-  color: #121518;
+  color: #121518e7;
   font-size: 12px;
   font-weight: 900;
   transition: 0.3s;
@@ -1493,7 +1558,7 @@ a:focus {
   margin-bottom: 30px;
   width: 100%;
   padding: 30px;
-  background: #121518;
+  background: #121518e7;
 }
 
 .contact .contact-item {
@@ -1573,8 +1638,11 @@ a:focus {
 }
 
 .contact .contact-form .btn:hover {
-  color: #121518;
+  color: #121518e7;
   background: #aa9166;
+}
+.btn1 {
+  background-color: #121518e7 !important;
 }
 
 /*******************************/
@@ -1687,7 +1755,7 @@ a:focus {
   position: relative;
   margin-top: 45px;
   padding-top: 80px;
-  background: #121518;
+  background: #121518e7;
   color: #ffffff;
 }
 
