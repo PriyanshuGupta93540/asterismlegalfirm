@@ -98,6 +98,7 @@ News and Feed
   position: relative;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 /* Add margin for mobile screens only */
@@ -111,9 +112,9 @@ News and Feed
 }
 
 /* Add margin for mobile screens */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .news-ticker {
-    margin: 0 15px;
+    margin: 10px 15px 10px 10px;
     max-width: calc(100% - 30px); /* 15px left + 15px right */
     border-radius: 8px; /* optional */
   }
@@ -126,7 +127,9 @@ News and Feed
 
 .ticker-content {
   display: inline-block;
-  animation: scrollTicker 15s linear infinite;
+  animation: scrollTicker 10s linear infinite;
+  will-change: transform; /* Boosts performance */
+  transform: translateX(0); /* Set initial position */
 }
 
 .ticker-content span {
