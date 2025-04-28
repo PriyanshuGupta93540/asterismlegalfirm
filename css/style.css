@@ -130,7 +130,9 @@ News and Feed
   display: inline-block;
   animation: scrollTicker 15s linear infinite;
   will-change: transform; /* Boosts performance */
-  transform: translateX(0); /* Set initial position */
+  transform: translateX(0);
+  /* transform: translateX(0%) scale(1); */
+  min-width: max-content;
 }
 
 .ticker-content span {
@@ -145,7 +147,7 @@ News and Feed
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
