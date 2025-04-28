@@ -127,7 +127,7 @@ News and Feed
 
 .ticker-content {
   display: inline-block;
-  animation: scrollTicker 15s linear infinite;
+  animation: scrollTicker 20s linear infinite;
   animation-delay: 2s; /* Default delay for desktop */
   will-change: transform;
   transform: translateX(100%); /* Ensure it's off-screen initially */
